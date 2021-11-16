@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block breadcrumb %}
+    <li><a href="/">Главная</a></li>
+    <li><a href="/items">Список товаров</a></li>
+{% endblock %}
+
+{% block content %}
+<h2>Список товаров</h2>
+<ol>
+    {% for item in items %}
+    <li class="item-card"><a href="{% url 'item-page' id=item.id %}">{{ item.name }}</a></li>
+    {% endfor %}
+</ol>
+<b><a href="/">На главную</a></b>
+{% endblock %}
