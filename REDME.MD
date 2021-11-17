@@ -3,11 +3,24 @@
 Тестовый проект обучения на Python Django
 
 ## запуск проекта
-1. python3 -m venv django_venv
-2. source django_venv/bin/activate
-4. pip install -r requirements.txt
-5. python manage.py migrate
-6. python manage.py runserver
+1. Создание и инициализация окружения
+```bash
+python3 -m venv django_venv
+source django_venv/bin/activate
+```
+2. Установка пакетов
+```bash
+pip install -r requirements.txt
+```
+3. Создание миграции (для БД)
+```bash
+python manage.py migrate
+```
+4. Запуск сервера Django
+```bash
+python manage.py runserver. 
+```
+
 
 
 
